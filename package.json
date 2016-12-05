@@ -1,0 +1,48 @@
+{
+	"name": "demo_electron_update",
+	"version": "0.1.0",
+	"description": "demo for updating electron based apps",
+	"main": "app/main.js",
+	"scripts": {
+		"start": "electron app/main.js",
+		"start:dev": "tsc && electron app/main.js",
+		"build:tsc": "typings install && tsc",
+		"build:pack": "build"
+	},
+	"repository": "https://github.com/vijayantkatyal/Demo_electron_update",
+	"keywords": [
+		"Electron",
+		"Demo",
+        "Update"
+	],
+	"author": {
+		"name" : "Vijayant Katyal",
+		"email": "hello@vijayantkatyal.com",
+		"url": "vijayantkatyal.com"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"electron": "1.4.8",
+		"electron-builder": "10.5.0"
+	},
+	"dependencies": {
+		"electron-auto-updater": "0.6.2"
+	},
+	"build":{
+		"appId": "demo_electron_update",
+		"productName": "Demo Electron Update",
+		"files":[
+			"app/**/*",
+			"node_modules/**/*",
+			"package.json"
+		],
+		"linux":{
+			"target":[
+				"deb"
+			]
+		},
+		"publish":{
+			"provider": "github"
+		}
+	}
+}
