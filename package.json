@@ -7,7 +7,9 @@
 		"start": "electron app/main.js",
 		"start:dev": "tsc && electron app/main.js",
 		"build:tsc": "typings install && tsc",
-		"build:pack": "build"
+		"build:pack": "build",
+		"build:publish": "build --publish always",
+		"release": "build"
 	},
 	"repository": "https://github.com/vijayantkatyal/Demo_electron_update",
 	"keywords": [
