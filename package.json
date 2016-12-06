@@ -45,6 +45,10 @@
 		},
 		"publish":{
 			"provider": "github"
+		},
+		"win":{
+			"publish":["github"],
+			"remoteReleases": "https://github.com/vijayantkatyal/Demo_electron_update"
 		}
 	}
 }
