@@ -1,6 +1,6 @@
 {
 	"name": "demo_electron_update",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "demo for updating electron based apps",
 	"main": "app/main.js",
 	"scripts": {
